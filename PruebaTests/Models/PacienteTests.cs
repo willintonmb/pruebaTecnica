@@ -36,16 +36,18 @@ namespace PruebaTests.Models
 
 
             //Act 
-            var paciente = new Paciente(documento, 
-                                        nombres, 
-                                        apellidos, 
-                                        dirección,
-                                        telefono,
-                                        ciudad, 
-                                        email, 
-                                        tipoDocumento, 
-                                        tipoAfiliacion
-                                        );
+            var paciente = new Paciente() 
+            {
+                Documento = documento,
+                Apellidos = apellidos,
+                Ciudad = ciudad,
+                Direccion = dirección,
+                Email = email,
+                Nombres = nombres,
+                Telefono = telefono,
+                TipoAfiliacion = tipoAfiliacion,
+                TipoDocumento = tipoDocumento
+            };
 
             //Assert
             Assert.IsNotNull(paciente);

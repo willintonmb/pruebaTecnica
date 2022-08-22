@@ -22,27 +22,33 @@ namespace PruebaTests
         {
             pacientes = new List<Paciente>();
 
-            paciente1 = new Paciente("987654321",
-                                    "Fulanito",
-                                    "DeTal",
-                                    "Calle 50 Carrera 50",
-                                    "3108888888",
-                                    "Tunja",
-                                    "prueba@pruebas.co",
-                                    EnumTipoDocumento.Cedula,
-                                    EnumTipoAfiliacion.Particular
-                                    );
+            paciente1 = new Paciente()
 
-            paciente1 = new Paciente("741852963",
-                                    "Rosa",
-                                    "Martinez",
-                                    "Carrera 50 Calle 10",
-                                    "3101111111",
-                                    "Medellin",
-                                    "correo@prueba.co",
-                                    EnumTipoDocumento.Pasaporte,
-                                    EnumTipoAfiliacion.Prepagada
-                                    );
+            {
+                Documento = "741852963",
+                Apellidos = "Martinez",
+                Ciudad = "Medellin",
+                Direccion = "Carrera 50 Calle 10",
+                Email = "correo@prueba.co",
+                Nombres = "Rosa",
+                Telefono = "3101111111",
+                TipoAfiliacion = EnumTipoAfiliacion.Prepagada,
+                TipoDocumento = EnumTipoDocumento.Pasaporte
+            };
+        
+
+            paciente1 = new Paciente()
+            {
+                Documento = "725941365",
+                Apellidos = "Bolivar",
+                Ciudad = "Caracas",
+                Direccion = "Calle 50 Carrera 10",
+                Email = "correo@prueba.co",
+                Nombres = "Simon",
+                Telefono = "3103333333",
+                TipoAfiliacion = EnumTipoAfiliacion.Contributivo,
+                TipoDocumento = EnumTipoDocumento.Cedula
+            }; 
 
             pacientes.Add(paciente1);
             pacientes.Add(paciente2);
