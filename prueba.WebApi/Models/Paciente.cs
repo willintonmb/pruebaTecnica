@@ -10,7 +10,7 @@ namespace prueba.WebApi.Models
         /// <summary>
         /// Representa un paciente
         /// </summary>
-        public Guid id { get; set; }
+        public Guid id { get; set; } = Guid.NewGuid();
         public string Documento { get; set; }
         public string Nombres { get; set; }
         public string Apellidos { get; set; }
