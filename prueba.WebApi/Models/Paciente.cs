@@ -31,7 +31,7 @@ namespace prueba.WebApi.Models
                         EnumTipoDocumento tipoDocumento, 
                         EnumTipoAfiliacion tipoAfiliacion)
         {
-
+            id = Guid.NewGuid();
             Documento = documento;
             Nombres = nombres;
             Apellidos = apellidos;
